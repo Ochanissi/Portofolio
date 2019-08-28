@@ -1,14 +1,21 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #B28451;
+$color-primary: #04C2C9;
+$color-primary-dark: #00A1A7;
 
-$color-secondary: #101d2c;
+$color-secondary: #E31B6D;
 
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
 
-$color-grey-dark-1: #54483A;
-$color-grey-dark-2: #6D5D4B;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
@@ -40,13 +47,13 @@ html {
 
 body {
     font-family: $font-primary;
-    color: $color-grey-dark-2;
+    color: $color-white;
     font-weight: 300;
     line-height: 1.6;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-rows: 100vh repeat(5, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 }
