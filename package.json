@@ -1,0 +1,33 @@
+{
+  "name": "Portofolio",
+  "version": "1.0.0",
+  "description": "Portofolio Webpage",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ochanissi/Portofolio.git"
+  },
+  "author": "Mirel Bitoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ochanissi/Portofolio/issues"
+  },
+  "homepage": "https://github.com/Ochanissi/Portofolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^6.1.3"
+  },
+  "dependencies": {}
+}
