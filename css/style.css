@@ -194,7 +194,7 @@ body {
       background-color: aqua;
       background-size: 10rem;
       padding: 2rem;
-      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+      clip-path: polygon(25% 10%, 75% 10%, 100% 50%, 100% 50%, 75% 90%, 25% 90%, 0 50%, 0 50%); }
   .about__description {
     background-color: green;
     grid-row: 3 / 4;
@@ -202,10 +202,9 @@ body {
     text-align: center; }
     .about__description--img {
       background-color: aqua;
-      width: 100rem;
-      height: 100rem;
-      padding: 2rem;
-      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+      width: 20rem;
+      height: 20rem;
+      clip-path: polygon(25% 10%, 75% 10%, 100% 50%, 100% 50%, 75% 90%, 25% 90%, 0 50%, 0 50%); }
   .about__skills {
     background-color: black;
     grid-row: 4 / 5;
