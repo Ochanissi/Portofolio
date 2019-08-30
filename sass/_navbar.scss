@@ -23,11 +23,13 @@
         align-items: center;
 
         list-style: none;
-        grid-template-columns: repeat(5, max-content);
+        grid-template-columns: repeat(6, max-content);
         grid-gap: 4rem;
         margin-right: 2rem;
     
         // max-width: 50rem;
+        position: relative;
+        
     
         &--link:link,
         &--link:visited {
@@ -58,11 +60,32 @@
             -webkit-transition: width .2s ease;
         }
     
-        &--link:hover:after{
+        &--link:hover:after {
             width: 100%;
             left: 0;
             background: $color-secondary;
         }
+
+        &--logo:link,
+        &--logo:visited {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: 2rem;
+            color: $color-secondary;
+            font-weight: 900;
+            font-size: 3.5rem;
+            text-decoration: none;
+            transition: 1s ease;
+            -webkit-transition: 1s ease;
+            overflow: hidden;
+        }
+
+        &--logo:hover {
+            color: $color-white;
+            transform: scale(1.2, 1.2);
+        }
+
     }
    
 }
