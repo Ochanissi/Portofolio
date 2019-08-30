@@ -113,9 +113,10 @@ body {
     justify-items: center;
     align-items: center;
     list-style: none;
-    grid-template-columns: repeat(5, max-content);
+    grid-template-columns: repeat(6, max-content);
     grid-gap: 4rem;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    position: relative; }
     .navbar__main--link:link, .navbar__main--link:visited {
       font-size: 1.6rem;
       font-weight: 400;
@@ -144,6 +145,21 @@ body {
       width: 100%;
       left: 0;
       background: #E31B6D; }
+    .navbar__main--logo:link, .navbar__main--logo:visited {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: 2rem;
+      color: #E31B6D;
+      font-weight: 900;
+      font-size: 3.5rem;
+      text-decoration: none;
+      transition: 1s ease;
+      -webkit-transition: 1s ease;
+      overflow: hidden; }
+    .navbar__main--logo:hover {
+      color: #fff;
+      transform: scale(1.2, 1.2); }
 
 .header {
   grid-row: 1 / 2;
