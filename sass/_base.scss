@@ -47,7 +47,7 @@ html {
 
 body {
     font-family: $font-primary;
-    color: $color-white;
+    color: $color-black;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -56,4 +56,9 @@ body {
     display: grid;
     grid-template-rows: 100vh repeat(5, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    & > * {
+        // padding: 40px;
+        font-size: 1.75rem;
+    }
 }
