@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -19,8 +19,10 @@ body {
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .container > * {
+    font-size: 1.75rem; }
 
-.heading-1, .heading-2, .heading-3, .heading-3--underscore, .heading-4 {
+.heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
@@ -34,21 +36,33 @@ body {
 .heading-2 {
   font-size: 5rem;
   color: #f7f7f7;
-  font-style: italic;
   line-height: 1; }
   .heading-2--light {
     color: #f7f7f7; }
   .heading-2--dark {
     color: #777; }
 
-.heading-3, .heading-3--underscore {
+.heading-3 {
   font-size: 4rem;
   color: #000;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative; }
+  .heading-3:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 7.5rem;
+    border-bottom: 7.5px solid #000;
+    transform: translate(-50%, 0); }
 
 .heading-4 {
-  font-size: 1.9rem; }
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #777; }
   .heading-4--light {
     color: #f7f7f7; }
   .heading-4--dark {
@@ -148,9 +162,11 @@ body {
 .about {
   background-color: yellowgreen;
   grid-column: full-start / full-end;
+  padding: 5rem 0;
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-gap: 5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -163,11 +179,33 @@ body {
   .about__features {
     background-color: red;
     grid-row: 2 / 3;
-    grid-column: center-start / center-end; }
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center; }
+    .about__features--img {
+      color: white;
+      font-size: 7.5rem;
+      background-color: aqua;
+      background-size: 10rem;
+      padding: 2rem;
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
   .about__description {
     background-color: green;
     grid-row: 3 / 4;
-    grid-column: center-start / col-end 4; }
+    grid-column: center-start / col-end 4;
+    text-align: center; }
+    .about__description--img {
+      background-color: aqua;
+      width: 100rem;
+      height: 100rem;
+      padding: 2rem;
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
   .about__skills {
     background-color: black;
     grid-row: 4 / 5;
