@@ -2,4 +2,49 @@
     background-color: greenyellow;
 
     grid-column: full-start / full-end;
+
+
+    padding: 5rem 0;
+
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    grid-gap: 5rem;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    &__title {
+        background-color: blue;
+
+        grid-row: 1 / 2;
+        grid-column: center-start / center-end;
+        text-align: center;
+    }
+
+    &__examples {
+        background-color: red;
+
+        grid-row: 2 / 3;
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: start;
+
+        text-align: center;
+
+        position: relative;
+
+        
+
+    }
 }

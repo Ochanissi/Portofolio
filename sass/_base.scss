@@ -3,6 +3,8 @@ $color-primary: #04C2C9;
 $color-primary-dark: #00A1A7;
 
 $color-secondary: #E31B6D;
+$color-secondary-dark: #BA265D;
+$color-secondary-darker: #a32453;
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
@@ -10,16 +12,16 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-grey-dark-1: #777;
-$color-grey-dark-2: #999;
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #777;
 $color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
 
 // FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-primary: 'Raleway', sans-serif;
+$font-display: 'Raleway', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 // $bp-largest: 75em; // 1200px

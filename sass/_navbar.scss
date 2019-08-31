@@ -8,9 +8,9 @@
     top: 0;
     right: 0;
     width: 100%;
-    background-color: rgba($color-grey-dark-3, 0.5);
+    background-color: rgba($color-grey-dark-3, 0.75);
 
-    box-shadow: 0 2px 2px $color-grey-dark-1;
+    box-shadow: 0 2px 2px $color-primary;
     z-index: 9999;
 
 
@@ -59,6 +59,10 @@
             transition: width .2s ease;
             -webkit-transition: width .2s ease;
         }
+
+        &--link:hover {
+            color: $color-grey-dark-1;
+        }
     
         &--link:hover:after {
             width: 100%;
@@ -82,7 +86,7 @@
         }
 
         &--logo:hover {
-            color: $color-white;
+            color: $color-secondary-dark;
             transform: scale(1.2, 1.2);
         }
 
