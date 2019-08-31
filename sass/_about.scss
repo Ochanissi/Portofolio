@@ -37,7 +37,7 @@
         justify-content: center;
         align-content: center;
         justify-items: center;
-        align-items: center;
+        align-items: start;
 
         text-align: center;
 
@@ -51,7 +51,7 @@
         &--img {
             color: white;
             font-size: 7.5rem;
-            background-color: aqua;
+            background-color: $color-primary;
             background-size: 10rem;
             padding: 2rem;
 
