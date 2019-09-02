@@ -3,19 +3,22 @@
 
     grid-column: full-start / full-end;
 
-
-    padding: 5rem 0;
+    padding: 10rem 0;
+    grid-gap: 5rem;
+   
 
     display: grid;
     grid-template-rows: repeat(4, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
-    grid-gap: 5rem;
-
+    
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
+
+    
+    
 
     &__title {
         background-color: blue;
@@ -23,6 +26,7 @@
         grid-row: 1 / 2;
         grid-column: center-start / center-end;
         text-align: center;
+
     }
 
     &__examples {
@@ -33,15 +37,16 @@
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5rem;
-
+        
         justify-content: center;
         align-content: center;
         justify-items: center;
         align-items: start;
-
+        
         text-align: center;
-
+        
+        grid-gap: 5rem;
+        padding: 0 5rem;
 
 
         .card {
@@ -50,7 +55,6 @@
             background-color: #fff;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            -webkit-transition: box-shadow 0.5s;
             transition: box-shadow 0.5s;
 
             &__img {
@@ -70,19 +74,14 @@
                 height: 245px;
                 overflow: hidden;
                 background-color: #000;
-                -webkit-transition: height 0.5s;
                 transition: height 0.5s;
 
                 img {
                     width: 100%;
                     display: block;
                     opacity: 1;
-                    -webkit-transform: scale(1);
                     transform: scale(1);
-                    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-                    transition: opacity 0.5s, -webkit-transform 0.5s;
                     transition: opacity 0.5s, transform 0.5s;
-                    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
                 }
             }
 
@@ -100,7 +99,6 @@
                 position: relative;
                 height: 185px;
                 padding: 20px;
-                -webkit-transition: height 0.5s;
                 transition: height 0.5s;
             }
 
@@ -147,21 +145,14 @@
                 color: #666C74;
                 line-height: 27px;
                 opacity: 0;
-                -webkit-transform: translateY(45px);
                 transform: translateY(45px);
-                -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-                transition: opacity 0.3s, -webkit-transform 0.3s;
                 transition: opacity 0.3s, transform 0.3s;
-                transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
-                -webkit-transition-delay: 0s;
                 transition-delay: 0s;
             }
 
             &:hover .card__description {
                 opacity: 1;
-                -webkit-transform: translateY(0px);
                 transform: translateY(0px);
-                -webkit-transition-delay: 0.2s;
                 transition-delay: 0.2s;
             }
 
