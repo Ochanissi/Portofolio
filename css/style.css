@@ -81,13 +81,27 @@ body {
   font-size: 1.5rem;
   letter-spacing: .4rem;
   cursor: pointer;
-  transition: all .2s ease-in-out; }
+  transition: all .5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .btn:hover,
   .btn:link:hover,
   .btn:visited:hover {
     background: #04C2C9;
     border: 2px solid #00A1A7;
     color: #fefefe; }
+    .btn:hover ion-icon,
+    .btn:link:hover ion-icon,
+    .btn:visited:hover ion-icon {
+      transform: rotate(90deg) translate(-3px, 0); }
+
+.btn__icon-arrow {
+  font-weight: 700;
+  padding-left: 1rem;
+  font-size: 2rem;
+  transition: all .3s linear;
+  line-height: 25px; }
 
 .mb-sm {
   margin-bottom: 2rem; }
