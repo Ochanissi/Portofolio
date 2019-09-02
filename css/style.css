@@ -68,20 +68,26 @@ body {
   .heading-4--dark {
     color: #999; }
 
-.btn {
-  background-color: #04C2C9;
-  color: #fff;
-  border: none;
-  border-radius: 0;
+.btn,
+.btn:link,
+.btn:visited {
+  padding: 1.5rem 2rem;
+  border: 2px solid #fff;
+  color: #f7f7f7;
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  text-transform: 1.5rem;
+  font-weight: 700;
   text-transform: uppercase;
-  padding: 1.8rem 3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: .4rem;
   cursor: pointer;
-  transition: all .2s; }
-  .btn:hover {
-    background-color: #00A1A7; }
+  transition: all .2s ease-in-out; }
+  .btn:hover,
+  .btn:link:hover,
+  .btn:visited:hover {
+    background: #04C2C9;
+    border: 2px solid #00A1A7;
+    color: #fefefe; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -180,7 +186,7 @@ body {
 .about {
   background-color: yellowgreen;
   grid-column: full-start / full-end;
-  padding: 5rem 0;
+  padding: 10rem 0;
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
@@ -231,11 +237,11 @@ body {
 .projects {
   background-color: greenyellow;
   grid-column: full-start / full-end;
-  padding: 5rem 0;
+  padding: 10rem 0;
+  grid-gap: 5rem;
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-gap: 5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -251,18 +257,18 @@ body {
     grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: start;
-    text-align: center; }
+    text-align: center;
+    grid-gap: 5rem;
+    padding: 0 5rem; }
     .projects__examples .card {
       width: 370px;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      -webkit-transition: box-shadow 0.5s;
       transition: box-shadow 0.5s; }
       .projects__examples .card__img {
         width: 100%; }
@@ -275,18 +281,13 @@ body {
         height: 245px;
         overflow: hidden;
         background-color: #000;
-        -webkit-transition: height 0.5s;
         transition: height 0.5s; }
         .projects__examples .card__thumb img {
           width: 100%;
           display: block;
           opacity: 1;
-          -webkit-transform: scale(1);
           transform: scale(1);
-          -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-          transition: opacity 0.5s, -webkit-transform 0.5s;
-          transition: opacity 0.5s, transform 0.5s;
-          transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s; }
+          transition: opacity 0.5s, transform 0.5s; }
       .projects__examples .card:hover .card__thumb {
         height: 130px; }
       .projects__examples .card:hover .card__thumb img {
@@ -297,7 +298,6 @@ body {
         position: relative;
         height: 185px;
         padding: 20px;
-        -webkit-transition: height 0.5s;
         transition: height 0.5s; }
       .projects__examples .card:hover .card__body {
         height: 300px; }
@@ -334,19 +334,12 @@ body {
         color: #666C74;
         line-height: 27px;
         opacity: 0;
-        -webkit-transform: translateY(45px);
         transform: translateY(45px);
-        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-        transition: opacity 0.3s, -webkit-transform 0.3s;
         transition: opacity 0.3s, transform 0.3s;
-        transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
-        -webkit-transition-delay: 0s;
         transition-delay: 0s; }
       .projects__examples .card:hover .card__description {
         opacity: 1;
-        -webkit-transform: translateY(0px);
         transform: translateY(0px);
-        -webkit-transition-delay: 0.2s;
         transition-delay: 0.2s; }
       .projects__examples .card__footer {
         bottom: 12px;

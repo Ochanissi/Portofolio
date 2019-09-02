@@ -66,21 +66,25 @@
     }
 }
 
-.btn {
-    background-color: $color-primary;
-    color: #fff;
-    border: none;
-    border-radius: 0;
+.btn,
+.btn:link,
+.btn:visited {
+    padding: 1.5rem 2rem;
+    border: 2px solid $color-white;
+    color: $color-grey-light-1;
     font-family: $font-display;
-    font-size: 1.5rem;
-    text-transform: 1.5rem;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 1.8rem 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
     cursor: pointer;
-    transition: all .2s;
-
+    transition: all .2s ease-in-out;
+    
     &:hover {
-        background-color: $color-primary-dark;
+      background: $color-primary;
+      border: 2px solid $color-primary-dark;
+      color: #fefefe;
     }
 }
 
