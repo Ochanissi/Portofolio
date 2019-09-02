@@ -79,14 +79,39 @@
     font-size: 1.5rem;
     letter-spacing: .4rem;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     
     &:hover {
       background: $color-primary;
       border: 2px solid $color-primary-dark;
       color: #fefefe;
+
+      & ion-icon {
+        // transform: rotate(90deg) translate(0, 0);
+        transform: rotate(90deg) translate(-3px, 0);
+
+        
+      }
     }
+
+    
 }
+
+.btn__icon-arrow {
+    font-weight: 700;
+    padding-left: 1rem;
+    font-size: 2rem;
+    transition: all .3s linear;
+    line-height: 25px;
+    
+}
+
 
 .mb-sm {
     margin-bottom: 2rem;
