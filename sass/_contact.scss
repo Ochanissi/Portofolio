@@ -1,5 +1,6 @@
 .contact {
-    background-color: burlywood;
+    // background-color: burlywood;
+    background-color: $color-grey-dark-4;
 
     grid-column: full-start / full-end;
 
@@ -11,11 +12,24 @@
 
     &__title {
         padding-bottom: 5rem;
+
+        &--header {
+            color: $color-white; 
+
+            &:before {
+                border-bottom: 0.5rem solid $color-white; 
+            }
+        }
     }
 
     &__content {
 
         &--links {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: center;
+            justify-items: center;
+            grid-gap: 3rem;
 
         }
     }

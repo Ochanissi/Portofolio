@@ -1,3 +1,45 @@
 .footer {
-    background-color: aquamarine;
+    // background-color: aquamarine;
+    background-color: $color-grey-dark-5;
+
+    grid-column: full-start / full-end;
+
+    
+
+    color: $color-white;
+
+    text-align: center;
+
+    // padding: 5rem 0;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+    // position: relative;
+    
+
+    &__home {
+        // position: absolute;
+        // top: -15%;
+        // left: 50%;
+
+        transform: translate(0, -50%);
+
+        
+    }
+
+    &__content {
+
+        padding: 3rem 0;
+
+        &--name {
+            color: $color-secondary;
+        }
+
+        &--link:link,
+        &--link:visited {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
 }
