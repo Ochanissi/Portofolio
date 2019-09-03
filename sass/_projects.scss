@@ -92,13 +92,13 @@
 
             &__body {
                 position: relative;
-                height: 18.5rem;
+                height: 14rem;
                 padding: 2rem;
                 transition: height 0.5s;
             }
 
             &:hover .card__body {
-                height: 30rem;
+                height: 25rem;
             }
 
             &__category {
@@ -136,13 +136,11 @@
 
             &__description {
                 position: absolute;
-                left: 20px;
-                right: 20px;
-                bottom: 56px;
-                margin: 0;
-                padding: 0;
-                color: #666C74;
-                line-height: 27px;
+                left: 2rem;
+                right: 2rem;
+                bottom: 5.6rem;
+                color: $color-grey-dark-3;
+                line-height: 2.7rem;
                 opacity: 0;
                 transform: translateY(45px);
                 transition: opacity 0.3s, transform 0.3s;

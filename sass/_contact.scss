@@ -1,3 +1,23 @@
 .contact {
     background-color: burlywood;
+
+    grid-column: full-start / full-end;
+
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+
+    padding: 10rem 0;
+    text-align: center;
+
+    &__title {
+        padding-bottom: 5rem;
+    }
+
+    &__content {
+
+        &--links {
+
+        }
+    }
+
 }
