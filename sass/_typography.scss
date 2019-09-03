@@ -103,15 +103,56 @@
     
 }
 
-.btn__icon-arrow {
+.btn__card,
+.btn__card:link,
+.btn__card:visited {
+    padding: 1rem 1.4rem;
+    border: 2px solid $color-grey-dark-1;
+    color: $color-grey-dark-1;
+    font-family: $font-display;
     font-weight: 700;
-    padding-left: 1rem;
-    font-size: 2rem;
-    transition: all .3s linear;
-    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    
+    &:hover {
+      background: $color-primary;
+      border: 2px solid $color-primary-dark;
+      color: #fefefe;
+
+      & ion-icon {
+        transform: none;
+
+      }
+    }
+
     
 }
 
+
+.btn__icon {
+    &-arrow {
+        font-weight: 700;
+        padding-left: 1rem;
+        font-size: 2rem;
+        transition: all .3s linear;
+        line-height: 25px;
+    }
+
+    &-gihub {
+        padding-left: 1rem;
+
+    }
+
+    &-rocket {
+        padding-left: 1rem;
+
+    }
+}
 
 .mb-sm {
     margin-bottom: 2rem;

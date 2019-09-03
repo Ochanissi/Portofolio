@@ -96,12 +96,43 @@ body {
     .btn:visited:hover ion-icon {
       transform: rotate(90deg) translate(-3px, 0); }
 
+.btn__card,
+.btn__card:link,
+.btn__card:visited {
+  padding: 1rem 1.4rem;
+  border: 2px solid #999;
+  color: #999;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: .4rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out; }
+  .btn__card:hover,
+  .btn__card:link:hover,
+  .btn__card:visited:hover {
+    background: #04C2C9;
+    border: 2px solid #00A1A7;
+    color: #fefefe; }
+    .btn__card:hover ion-icon,
+    .btn__card:link:hover ion-icon,
+    .btn__card:visited:hover ion-icon {
+      transform: none; }
+
 .btn__icon-arrow {
   font-weight: 700;
   padding-left: 1rem;
   font-size: 2rem;
   transition: all .3s linear;
   line-height: 25px; }
+
+.btn__icon-gihub {
+  padding-left: 1rem; }
+
+.btn__icon-rocket {
+  padding-left: 1rem; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -274,25 +305,23 @@ body {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    align-items: start;
+    align-items: center;
     text-align: center;
     grid-gap: 5rem;
     padding: 0 5rem; }
     .projects__examples .card {
-      width: 370px;
+      width: 37rem;
       background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
       overflow: hidden;
       transition: box-shadow 0.5s; }
-      .projects__examples .card__img {
-        width: 100%; }
       .projects__examples .card a {
         color: inherit;
         text-decoration: none; }
       .projects__examples .card:hover {
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); }
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
       .projects__examples .card__thumb {
-        height: 245px;
+        height: 24rem;
         overflow: hidden;
         background-color: #000;
         transition: height 0.5s; }
@@ -303,41 +332,44 @@ body {
           transform: scale(1);
           transition: opacity 0.5s, transform 0.5s; }
       .projects__examples .card:hover .card__thumb {
-        height: 130px; }
+        height: 13rem; }
       .projects__examples .card:hover .card__thumb img {
         opacity: 0.6;
-        -webkit-transform: scale(1.2);
         transform: scale(1.2); }
       .projects__examples .card__body {
         position: relative;
-        height: 185px;
-        padding: 20px;
+        height: 18.5rem;
+        padding: 2rem;
         transition: height 0.5s; }
       .projects__examples .card:hover .card__body {
-        height: 300px; }
+        height: 30rem; }
       .projects__examples .card__category {
         position: absolute;
-        top: -25px;
+        top: -2.5rem;
         right: 0;
-        height: 25px;
-        padding: 0 15px;
-        background-color: coral;
+        height: 2.5rem;
+        padding: 0 1.5rem;
+        background-color: #E31B6D;
         color: #fff;
         text-transform: uppercase;
-        font-size: 11px;
-        line-height: 25px; }
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2.5rem; }
       .projects__examples .card__title {
-        margin: 0;
-        padding: 0 0 10px 0;
-        color: #000;
-        font-size: 22px;
-        font-weight: bold;
-        text-transform: uppercase; }
+        padding-bottom: 1rem;
+        color: #333;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        cursor: pointer; }
       .projects__examples .card__subtitle {
-        margin: 0;
-        padding: 0 0 10px 0;
-        font-size: 19px;
-        color: coral; }
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: .15rem;
+        color: #E31B6D; }
       .projects__examples .card__description {
         position: absolute;
         left: 20px;
@@ -356,18 +388,13 @@ body {
         transform: translateY(0px);
         transition-delay: 0.2s; }
       .projects__examples .card__footer {
-        bottom: 12px;
-        left: 20px;
-        right: 20px;
-        font-size: 11px;
-        color: #A3A9A2; }
-        .projects__examples .card__footer .icon {
-          display: inline-block;
-          vertical-align: middle;
-          margin: -2px 0 0 2px;
-          font-size: 18px; }
-        .projects__examples .card__footer .icon + .icon {
-          padding-left: 10px; }
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        color: #333; }
 
 .contact {
   background-color: burlywood; }
