@@ -440,7 +440,7 @@ body {
     grid-gap: 5rem;
     padding: 0 5rem; }
     .projects__examples .card {
-      width: 37rem;
+      width: 35rem;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
       overflow: hidden;
