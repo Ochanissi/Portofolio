@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
 
@@ -24,45 +25,45 @@
     </nav>
 
     <header class="header" id="header">
-        <h1 class="heading-1">Hello, I'm <span class="heading-1--name">Mirel Bițoi</span>.</h1>
-        <h2 class="heading-2 mb-sm">I'm a full-stack web developer.</h2>
-        <a href="#projects" class="btn">View my work<ion-icon name="arrow-forward" class="btn__icon-arrow"></ion-icon></a>
+        <h1 class="heading-1" data-aos="fade-left">Hello, I'm <span class="heading-1--name">Mirel Bițoi</span>.</h1>
+        <h2 class="heading-2 mb-sm" data-aos="fade-right">I'm a full-stack web developer.</h2>
+        <a href="#projects" class="btn" data-aos="fade-up">View my work<ion-icon name="arrow-forward" class="btn__icon-arrow"></ion-icon></a>
     </header>
 
     <section class="about" id="about">
-        <div class="about__title">
+        <div class="about__title" data-aos="fade-right">
             <h3 class="heading-3">About</h3>
         </div>
         <div class="about__features">
             <div class="about__features-1">
-                <ion-icon name="speedometer" class="about__features--img"></ion-icon>
-                <h4 class="heading-4--dark">Fast</h4>
-                <p class="about__features--text-1">Fast load times and lag free interaction.</p>
+                <ion-icon name="speedometer" class="about__features--img" data-aos="flip-right"></ion-icon>
+                <h4 class="heading-4--dark" data-aos="fade-up">Fast</h4>
+                <p class="about__features--text-1" data-aos="fade-up" data-aos-delay="100">Fast load times and lag free interaction.</p>
             </div>
             <div class="about__features-2">
-                <ion-icon name="tablet-portrait" class="about__features--img"></ion-icon>
-                <h4 class="heading-4--dark">Responsive</h4>
-                <p class="about__features--text-2">Layouts that will work on any device, big or small.</p>
+                <ion-icon name="tablet-portrait" class="about__features--img" data-aos="flip-right"></ion-icon>
+                <h4 class="heading-4--dark" data-aos="fade-up">Responsive</h4>
+                <p class="about__features--text-2" data-aos="fade-up" data-aos-delay="100">Layouts that will work on any device, big or small.</p>
             </div>
             <div class="about__features-3">
-                <ion-icon name="bulb" class="about__features--img"></ion-icon>
-                <h4 class="heading-4--dark">Dynamic</h4>
-                <p class="about__features--text-3">Modern websites don't have to be static.</p>
+                <ion-icon name="bulb" class="about__features--img" data-aos="flip-right"></ion-icon>
+                <h4 class="heading-4--dark" data-aos="fade-up">Dynamic</h4>
+                <p class="about__features--text-3" data-aos="fade-up" data-aos-delay="100">Modern websites don't have to be static.</p>
             </div>
             <div class="about__features-4">
-                <ion-icon name="rocket" class="about__features--img"></ion-icon>
-                <h4 class="heading-4--dark">Intuitive</h4>
-                <p class="about__features--text-4">Easy to use and intuitive UX/UI.</p>
+                <ion-icon name="rocket" class="about__features--img" data-aos="flip-right"></ion-icon>
+                <h4 class="heading-4--dark" data-aos="fade-up">Intuitive</h4>
+                <p class="about__features--text-4" data-aos="fade-up" data-aos-delay="100">Easy to use and intuitive UX/UI.</p>
             </div>
         </div>
-        <div class="about__description">
+        <div class="about__description" data-aos="fade-right">
             <div class="about__description--main">
                 <img src="./img/about_photo.png" alt="" class="about__description--img">
                 <h4 class="heading-4--dark mb-sm">Who's this guy?</h4>
                 <p class="about__features--text-4">My name is <span class="footer__content--name"><a href="https://github.com/Ochanissi/" target="_blank" class="footer__content--link">Mirel</a></span> and I'm a web developer. I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.</p>
             </div>
         </div>
-        <div class="about__skills">
+        <div class="about__skills" data-aos="fade-left">
             <p class="about__skills--item-1">HTML5</p>
             <p class="about__skills--item-2">CSS3</p>
             <p class="about__skills--item-3">JavaScript</p>
@@ -86,16 +87,15 @@
             <p class="about__skills--item-21">Sessions</p>
             <p class="about__skills--item-22">JWT</p>
             <p class="about__skills--item-23">CI/CD</p>
-
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="fade-left">
         <div class="projects__title">
             <h3 class="heading-3">PROJECTS</h3>
         </div>
         <div class="projects__examples">
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="0">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -110,7 +110,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="150">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -125,7 +125,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -140,7 +140,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="450" data-aos-offset="100">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -155,7 +155,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="600" data-aos-offset="100">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -170,7 +170,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-aos="fade-up" data-aos-delay="750" data-aos-offset="100">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -189,7 +189,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact__title">
+        <div class="contact__title" data-aos="fade-right" data-aos-offset="100">
             <h3 class="heading-3 contact__title--header">Contact</h3>
         </div>
         <div class="contact__content">          
@@ -212,7 +212,22 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      
+    </script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                speedAsDuration: true
+            });
+    </script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
 </body>
 </html>
