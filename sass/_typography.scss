@@ -58,11 +58,13 @@
     color: $color-grey-dark-1;
 
     &--light {
+        @extend .heading-4;
         color: $color-grey-light-1;
     }
 
     &--dark {
-        color: $color-grey-dark-1;
+        @extend .heading-4;
+        color: $color-grey-dark-3;
     }
 }
 
@@ -164,8 +166,9 @@
 .btn__footer:link,
 .btn__footer:visited {
     padding: .5rem 1rem;
-    border: 3px solid $color-secondary;
-    color: $color-secondary;
+    border: 3px solid $color-secondary-dark;
+    color: $color-white;
+    background: $color-secondary;
     font-family: $font-display;
     font-weight: 700;
     text-transform: uppercase;
@@ -177,13 +180,13 @@
 
     
     &:hover {
-      background: $color-secondary;
+      background: $color-secondary-dark;
       border: 3px solid $color-secondary-darker;
-      color: $color-white;
+      color: $color-grey-light-2;
 
       & ion-icon {
-        transform: rotate(-90deg);
-
+        transform: rotate(-90deg) scale(1.1);
+        
       }
     }
 }

@@ -1,5 +1,6 @@
 .about {
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
+    background-color: $color-grey-light-1;
 
     grid-column: full-start / full-end;
 
@@ -17,15 +18,16 @@
     align-items: center;
 
     &__title {
-        background-color: blue;
+        // background-color: blue;
 
         grid-row: 1 / 2;
         grid-column: center-start / center-end;
         text-align: center;
+        margin-bottom: 5rem;
     }
 
     &__features {
-        background-color: red;
+        // background-color: red;
 
         grid-row: 2 / 3;
         grid-column: center-start / center-end;
@@ -63,7 +65,7 @@
     }
 
     &__description {
-        background-color: green;
+        // background-color: green;
 
         grid-row: 3 / 4;
         grid-column: center-start / col-end 4;
@@ -71,8 +73,10 @@
 
         text-align: center; 
 
+        padding: 0 12rem;
+
         &--img {
-            background-color: aqua;
+            // background-color: aqua;
             width: 20rem;
             height: 20rem;
 
@@ -85,7 +89,7 @@
     }
 
     &__skills {
-        background-color: yellow;
+        // background-color: yellow;
 
         grid-row: 3 / 4;
         grid-column: col-start 5 / center-end;
@@ -101,156 +105,146 @@
 
         width: 100%;
 
+        p {
+            background-color: $color-primary;
+            color: $color-white;
+            font-weight: 400;
+            border: 3px solid $color-primary-dark;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+            }
+        }
+
         &--item-1 {
-            background-color: red;
             grid-column: 1 / 3;
         }
 
-        &--item-2 {
-            background-color: red;            
+        &--item-2 {            
             grid-column: 3 / 5;
 
         }
 
         &--item-3 {
-            background-color: red;
             grid-column: 5 / 7;
             
         }
 
         &--item-4 {
-            background-color: red;
             grid-column: 1 / 3;
             grid-row: 2 / 3;
             
         }
 
         &--item-5 {
-            background-color: red;
             grid-column: 3 / 5;
             grid-row: 2 / 3;
             
         }
 
         &--item-6 {
-            background-color: red;
             grid-column: 5 / 7;
             grid-row: 2 / 3;
             
         }
 
         &--item-7 {
-            background-color: red;
             grid-column: 1 / 4;
             grid-row: 3 / 4;
         }
 
         &--item-8 {
-            background-color: red;
             grid-column: 4 / 7;
             grid-row: 3 / 4;
         }
 
         &--item-9 {
-            background-color: red;
             grid-row: 4 / 5;
             grid-column: 1 / 3;
             
         }
 
         &--item-10 {
-            background-color: red;
             grid-row: 4 / 5;
             grid-column: 3 / 5;
             
         }
 
         &--item-11 {
-            background-color: red;
             grid-row: 4 / 5;
             grid-column: 5 / 7;
             
         }
 
         &--item-12 {
-            background-color: red;
             grid-row: 5 / 6;
             grid-column: 1 / 3;
             
         }
 
         &--item-13 {
-            background-color: red;
             grid-row: 5 / 6;
             grid-column: 3 / 4;
             
         }
 
         &--item-14 {
-            background-color: red;
             grid-row: 5 / 6;
             grid-column: 4 / 5;
             
         }
 
         &--item-15 {
-            background-color: red;
             grid-row: 5 / 6;
             grid-column: 5 / 7;
             
         }
 
         &--item-16 {
-            background-color: red;
             grid-row: 6 / 7;
             grid-column: 1 / 4;
             
         }
 
         &--item-17 {
-            background-color: red;
             grid-row: 6 / 7;
             grid-column: 4 / 7;
             
         }
 
         &--item-18 {
-            background-color: red;
             grid-row: 7 / 8;
             grid-column: 1 / 3;
             
         }
 
         &--item-19 {
-            background-color: red;
             grid-row: 7 / 8;
             grid-column: 3 / 5;
             
         }
 
         &--item-20 {
-            background-color: red;
             grid-row: 7 / 8;
             grid-column: 5 / 7;
             
         }
 
         &--item-21 {
-            background-color: red;
             grid-row: 8 / 9;
             grid-column: 1 / 3;
             
         }
 
         &--item-22 {
-            background-color: red;
             grid-row: 8 / 9;
             grid-column: 3 / 5;
             
         }
 
         &--item-23 {
-            background-color: red;
             grid-row: 8 / 9;
             grid-column: 5 / 7;
             
