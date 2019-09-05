@@ -8,6 +8,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -22,18 +25,21 @@ body {
   .container > * {
     font-size: 1.75rem; }
 
-.heading-1, .heading-2, .heading-3, .heading-4, .heading-4--light, .heading-4--dark {
+.heading-1, .heading-1--name, .heading-2, .heading-2--light, .heading-2--dark, .heading-3, .heading-4, .heading-4--light, .heading-4--dark {
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
-.heading-1 {
+.heading-1, .heading-1--name {
   font-size: 6rem;
   color: #f7f7f7;
   line-height: 1; }
   .heading-1--name {
     color: #E31B6D; }
+  @media only screen and (max-width: 43.75em) {
+    .heading-1, .heading-1--name {
+      font-size: 4rem; } }
 
-.heading-2 {
+.heading-2, .heading-2--light, .heading-2--dark {
   font-size: 5rem;
   color: #f7f7f7;
   line-height: 1; }
@@ -41,6 +47,9 @@ body {
     color: #f7f7f7; }
   .heading-2--dark {
     color: #999; }
+  @media only screen and (max-width: 43.75em) {
+    .heading-2, .heading-2--light, .heading-2--dark {
+      font-size: 3rem; } }
 
 .heading-3 {
   font-size: 4rem;
@@ -287,7 +296,7 @@ body {
   grid-column: full-start / full-end;
   padding: 10rem 0;
   display: grid;
-  grid-template-rows: repeat(4, min-content);
+  grid-template-rows: repeat(5, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-gap: 5rem;
   justify-content: center;
@@ -310,6 +319,9 @@ body {
     justify-items: center;
     align-items: start;
     text-align: center; }
+    @media only screen and (max-width: 43.75em) {
+      .about__features {
+        grid-template-columns: repeat(2, 1fr); } }
     .about__features--img {
       color: white;
       font-size: 7.5rem;
@@ -321,7 +333,11 @@ body {
     grid-row: 3 / 4;
     grid-column: center-start / col-end 4;
     text-align: center;
-    padding: 0 12rem; }
+    max-width: 40rem; }
+    @media only screen and (max-width: 53.12em) {
+      .about__description {
+        grid-column: center-start / center-end;
+        max-width: 60rem; } }
     .about__description--img {
       width: 20rem;
       height: 20rem;
@@ -335,6 +351,10 @@ body {
     grid-gap: 1rem;
     text-align: center;
     width: 100%; }
+    @media only screen and (max-width: 53.12em) {
+      .about__skills {
+        grid-row: 4 / 5;
+        grid-column: center-start / center-end; } }
     .about__skills p {
       background-color: #04C2C9;
       color: #fff;
@@ -438,7 +458,13 @@ body {
     align-items: center;
     text-align: center;
     grid-gap: 5rem;
-    padding: 0 5rem; }
+    padding: 0 2rem; }
+    @media only screen and (max-width: 62.5em) {
+      .projects__examples {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 43.75em) {
+      .projects__examples {
+        grid-template-columns: repeat(1, 1fr); } }
     .projects__examples .card {
       width: 35rem;
       background-color: #fff;
