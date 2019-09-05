@@ -10,7 +10,12 @@
     line-height: 1;
 
     &--name {
+        @extend .heading-1;
         color: $color-secondary;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
     }
 }
 
@@ -21,11 +26,17 @@
     line-height: 1;
 
     &--light {
+        @extend .heading-2;
         color: $color-grey-light-1;
     }
 
     &--dark {
+        @extend .heading-2;
         color: $color-grey-dark-1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
     }
 }
 

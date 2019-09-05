@@ -25,9 +25,9 @@
     </nav>
 
     <header class="header" id="header">
-        <h1 class="heading-1" data-aos="fade-left">Hello, I'm <span class="heading-1--name">Mirel Bițoi</span>.</h1>
-        <h2 class="heading-2 mb-sm" data-aos="fade-right">I'm a full-stack web developer.</h2>
-        <a href="#projects" class="btn" data-aos="fade-up">View my work<ion-icon name="arrow-forward" class="btn__icon-arrow"></ion-icon></a>
+        <h1 class="heading-1" data-aos="fade-left" data-aos-offset="0">Hello, I'm <span class="heading-1--name">Mirel Bițoi</span>.</h1>
+        <h2 class="heading-2 mb-sm" data-aos="fade-right" data-aos-offset="0">I'm a full-stack web developer.</h2>
+        <a href="#projects" class="btn" data-aos="fade-up" data-aos-offset="0">View my work<ion-icon name="arrow-forward" class="btn__icon-arrow"></ion-icon></a>
     </header>
 
     <section class="about" id="about">
@@ -90,8 +90,8 @@
         </div>
     </section>
 
-    <section class="projects" id="projects" data-aos="fade-left">
-        <div class="projects__title">
+    <section class="projects" id="projects">
+        <div class="projects__title" data-aos="fade-left">
             <h3 class="heading-3">PROJECTS</h3>
         </div>
         <div class="projects__examples">
@@ -140,7 +140,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card" data-aos="fade-up" data-aos-delay="450" data-aos-offset="100">
+            <article class="card" data-aos="fade-up" data-aos-delay="450">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -155,7 +155,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card" data-aos="fade-up" data-aos-delay="600" data-aos-offset="100">
+            <article class="card" data-aos="fade-up" data-aos-delay="600">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -170,7 +170,7 @@
                     <a href="" target="_blank" class="btn btn__card">Live<ion-icon name="rocket" class="btn__icon-rocket"></ion-icon></a>
                 </div>
             </article>
-            <article class="card" data-aos="fade-up" data-aos-delay="750" data-aos-offset="100">
+            <article class="card" data-aos="fade-up" data-aos-delay="750">
                 <div class="card__thumb">
                     <a href="#" target="_blank"><img src="/img/project-1.jpg" class="card__img"></a>
                 </div>
@@ -189,7 +189,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact__title" data-aos="fade-right" data-aos-offset="100">
+        <div class="contact__title" data-aos="fade-right">
             <h3 class="heading-3 contact__title--header">Contact</h3>
         </div>
         <div class="contact__content">          
@@ -225,7 +225,7 @@
     </script>
     <script>
         AOS.init({
-            offset: 400,
+            offset: 100,
             duration: 1000
         });
     </script>

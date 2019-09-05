@@ -7,7 +7,7 @@
     padding: 10rem 0;
 
     display: grid;
-    grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(5, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
     grid-gap: 5rem;
@@ -43,6 +43,10 @@
 
         text-align: center;
 
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         &--1,
         &--2,
         &--3,
@@ -73,7 +77,14 @@
 
         text-align: center; 
 
-        padding: 0 12rem;
+        // padding: 0 12rem;
+        max-width: 40rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: center-start / center-end;
+            max-width: 60rem;
+
+        }
 
         &--img {
             // background-color: aqua;
@@ -104,6 +115,11 @@
         text-align: center;
 
         width: 100%;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 4 / 5;
+            grid-column: center-start / center-end;
+        }
 
         p {
             background-color: $color-primary;
