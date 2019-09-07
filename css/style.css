@@ -415,6 +415,7 @@ body {
       height: 20rem;
       clip-path: polygon(25% 10%, 75% 10%, 100% 50%, 100% 50%, 75% 90%, 25% 90%, 0 50%, 0 50%); }
   .about__skills {
+    overflow-x: hidden;
     grid-row: 3 / 4;
     grid-column: col-start 5 / center-end;
     display: grid;
