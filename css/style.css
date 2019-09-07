@@ -11,12 +11,16 @@ html {
   @media only screen and (max-width: 81.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 40%; } }
 
 body {
   font-family: "Raleway", sans-serif;
   color: #000;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
 
 .container {
   display: grid;
@@ -284,10 +288,11 @@ body {
     justify-content: start;
     align-items: center;
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     margin-top: 2.5rem;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    z-index: 9999; }
   .navbar #menu-toggle {
     display: none; }
   .navbar .menu-button,
