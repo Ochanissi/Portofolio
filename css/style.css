@@ -229,7 +229,6 @@ body {
     list-style: none;
     grid-template-columns: repeat(6, max-content);
     grid-gap: 4rem;
-    margin-right: 2rem;
     position: relative; }
     .navbar__main--link:link, .navbar__main--link:visited {
       font-size: 1.6rem;
@@ -253,27 +252,27 @@ body {
       margin-top: 5px;
       right: 0;
       background: #E31B6D;
-      transition: width .2s ease;
-      -webkit-transition: width .2s ease; }
+      transition: width .2s ease; }
     .navbar__main--link:hover {
       color: #999; }
     .navbar__main--link:hover:after {
       width: 100%;
       left: 0;
       background: #E31B6D; }
-    .navbar__main--logo:link, .navbar__main--logo:visited {
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin-left: 2rem;
+  .navbar__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 2rem;
+    z-index: 9999; }
+    .navbar__logo--icon:link, .navbar__logo--icon:visited {
       color: #E31B6D;
       font-weight: 900;
       font-size: 3.5rem;
       text-decoration: none;
       transition: 1s ease;
-      -webkit-transition: 1s ease;
       overflow: hidden; }
-    .navbar__main--logo:hover {
+    .navbar__logo--icon:hover {
       color: #BA265D;
       transform: scale(1.2, 1.2); }
   .navbar .menu-button-container {
@@ -319,27 +318,30 @@ body {
     .navbar .menu-button-container {
       display: flex;
       z-index: 99999; }
-    .navbar .navbar__main {
-      top: 4.8rem;
+    .navbar #menu-toggle ~ .navbar__main {
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .navbar #menu-toggle ~ .navbar__main li {
+        opacity: 0; }
+    .navbar #menu-toggle:checked ~ .navbar__main {
+      position: relative;
+      top: 4.5rem;
       left: 0;
-      height: 33.3rem;
+      height: 33rem;
       display: flex;
       flex-direction: column;
       grid-template-columns: repeat(1, max-content);
       grid-gap: 0;
       margin: 1rem 0 0 0;
       border-top: 3px solid #04C2C9;
-      transform: translateY(0); }
-      .navbar .navbar__main li {
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .navbar #menu-toggle:checked ~ .navbar__main li {
+        opacity: 1;
         display: flex;
         justify-content: center;
         margin: 0;
         width: 100%; }
-        .navbar .navbar__main li:not(:last-child) {
-          border-bottom: 1px solid #04C2C9; }
-      .navbar .navbar__main--logo:link, .navbar .navbar__main--logo:visited {
-        left: 0;
-        top: -5.8rem; } }
+        .navbar #menu-toggle:checked ~ .navbar__main li:not(:last-child) {
+          border-bottom: 1px solid #04C2C9; } }
 
 .header {
   grid-row: 1 / 2;
