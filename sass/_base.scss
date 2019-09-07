@@ -31,6 +31,7 @@ $bp-large: 62.5em; // 1000px
 $bp-medium: 53.12em; // 850px
 $bp-small: 43.75em; // 700px
 $bp-smallest: 31.25em; // 500px
+$bp-phone: 25em; // 400px
 
 
 *,
@@ -48,6 +49,10 @@ html {
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
     }
+
+    @media only screen and (max-width: $bp-phone) {
+        font-size: 40%;
+    }
 }
 
 body {
@@ -56,7 +61,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
 
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .container {
