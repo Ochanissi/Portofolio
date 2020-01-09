@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Ochanissi/Portofolio#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^9.7.3",
     "concat": "^1.0.3",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
