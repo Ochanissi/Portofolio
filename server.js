@@ -8,7 +8,6 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 if (process.env.NODE_ENV === 'production') {
-if (true) {
   app.use(compression());
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
