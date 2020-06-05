@@ -12,7 +12,9 @@ if (process.env.NODE_ENV === 'production') {
   // app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
   // Serving static files
-  app.use(express.static(path.join(__dirname, 'index.html')));
+  app.use(express.static(path.join(__dirname, 'css')));
+  app.use(express.static(path.join(__dirname, 'js')));
+  app.use(express.static(path.join(__dirname, 'img')));
 
   app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
