@@ -5,11 +5,14 @@ const enforce = require('express-sslify');
 
 // App initialization
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 80;
 
 if (process.env.NODE_ENV === 'production') {
   app.use(compression());
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+  // Serving static files
+  app.use(express.static(path.join(__dirname, 'index.html')));
 
   app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
