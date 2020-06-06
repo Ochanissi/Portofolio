@@ -7,7 +7,7 @@ const enforce = require('express-sslify');
 const app = express();
 const port = process.env.PORT || 80;
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'development') {
   app.use(compression());
   // app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
