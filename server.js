@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === 'production') {
   app.use(compression());
-  // app.use(enforce.HTTPS({ trustProtoHeader: true }));
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
   // Serving static files
   app.use(express.static(__dirname));
