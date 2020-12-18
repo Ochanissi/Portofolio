@@ -589,7 +589,7 @@ body {
         color: #333;
         font-size: 2.2rem;
         font-weight: 700;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
         cursor: pointer; }
       .projects__examples .card__subtitle {
@@ -597,7 +597,7 @@ body {
         font-size: 2rem;
         font-size: 1.8rem;
         font-weight: 400;
-        letter-spacing: .15rem;
+        letter-spacing: 0.15rem;
         color: #e31b6d; }
       .projects__examples .card__description {
         position: absolute;
